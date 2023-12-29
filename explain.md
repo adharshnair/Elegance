@@ -1,5 +1,5 @@
-<h1 style="font-weight: 800;">Elegance eCommerce <p style="font-size: 17px; margin-top: .5rem; font-weight: normal;">Unveiling Exquisite Possibilities in Every Purchase.</p>
-</h1>
+<p style="font-weight: 800; font-size: 5rem;">Elegance eCommerce </p> 
+<p style="font-size: 17px; margin-top: .5rem; font-weight: normal;">Unveiling Exquisite Possibilities in Every Purchase.</p>
 
 <h2>Table of Contents</h2>
 
