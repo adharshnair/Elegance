@@ -1,5 +1,10 @@
-<h2>Elegance eCommerce - Unveiling Exquisite Possibilities in Every Purchase.</h2>
-<h2>Table of Contents</h2>
+<div align="center">
+  <h2 align="center">Elegance eCommerce</h2>
+  
+  "Revolutionize your online shopping experience with our *Elegance* e-Commerce platform, delivering seamless transactions and unparalleled customer satisfaction."
+  
+
+</div>
 
 - [Header](#header)
 - [Mobile Menu](#mobile-menu)
