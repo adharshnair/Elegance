@@ -1,6 +1,6 @@
-<p style="font-weight: 800; font-size: 5rem;">Elegance eCommerce </p> 
-<p style="font-size: 17px; margin-top: .5rem; font-weight: normal;">Unveiling Exquisite Possibilities in Every Purchase.</p>
-
+<div>
+  <h1>Elegance eCommerce <span style="font-size: 1rem;">- Unveiling Exquisite Possibilities in Every Purchase.</span> </h1>
+</div>
 <h2>Table of Contents</h2>
 
 - [Header](#header)
