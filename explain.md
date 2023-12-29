@@ -1,6 +1,5 @@
-<div>
-  <h1>Elegance eCommerce <span style="font-size: 1rem;">- Unveiling Exquisite Possibilities in Every Purchase.</span> </h1>
-</div>
+**<span style="font-size: larger;">Elegance eCommerce</span>** - <span style="font-size: smaller;">Unveiling Exquisite Possibilities in Every Purchase.</span>
+
 <h2>Table of Contents</h2>
 
 - [Header](#header)
