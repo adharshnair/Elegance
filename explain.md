@@ -1,5 +1,4 @@
-**<span style="font-size: larger;">Elegance eCommerce</span>** - <span style="font-size: smaller;">Unveiling Exquisite Possibilities in Every Purchase.</span>
-
+<h2>Elegance eCommerce - Unveiling Exquisite Possibilities in Every Purchase.</h2>
 <h2>Table of Contents</h2>
 
 - [Header](#header)
