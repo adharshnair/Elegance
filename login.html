@@ -11,6 +11,12 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="./assets/tab-logo.png" />
 
+    <!-- REMIXICON Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <title>Login | Elegance</title>
   </head>
   <body>
@@ -18,7 +24,7 @@
       <div class="container__right">
         <div class="content">
           <img class="logo" src="assets/logo.png" alt="logo" />
-          <p class="header">Welcome to Elegance</p>
+          <p class="header"><strong>Welcome to Elegance</strong></p>
           <form>
             <div class="input__group">
               <input type="text" />
@@ -29,14 +35,20 @@
               <label for="password">Password</label>
             </div>
             <p><a href="#">Forgot password?</a></p>
-            <button><a href="index.html">Sign In</a></button>
+            <a href="index.html" class="button signin">Sign In</a>
           </form>
           <div class="divider">
             <span>or</span>
           </div>
-          <div class="google__login">
-            <img src="assets/search.png" alt="google" />
-            <span>Sign in with Google</span>
+          <div class="login">
+            <div class="google__login">
+              <i class="ri-google-fill"></i>
+              <p>Sign up with Google</p>
+            </div>
+            <div class="apple__login">
+              <i class="ri-apple-fill"></i>
+              <p>Sign up with Apple</p>
+            </div>
           </div>
           <p class="create__account">
             New in Elegance? <a href="./registration.html">Create Account</a>

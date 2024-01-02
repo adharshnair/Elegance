@@ -11,6 +11,12 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="./assets/tab-logo.png" />
 
+    <!-- REMIXICON Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <title>Registration | Elegance</title>
   </head>
   <body>
@@ -18,7 +24,7 @@
       <div class="container__right">
         <div class="content">
           <img class="logo" src="assets/logo.png" alt="logo" />
-          <p class="header">Get Started Now !</p>
+          <p class="header"><strong>Create an account</strong></p>
           <form>
             <div class="input__group">
               <input type="text" />
@@ -32,19 +38,25 @@
               <input type="password" />
               <label for="password">Password</label>
             </div>
-            <div class="input__group">
-              <input type="password" />
-              <label for="password">Confirm Password</label>
+            <div class="checkbox">
+              <i class="ri-checkbox-line"></i>
+              <p>I agree to the Terms and Conditions</p>
             </div>
-            
-            <button><a href="index.html">Sign Up</a></button>
+
+            <a href="index.html" class="button signin">Sign Up</a>
           </form>
           <div class="divider">
             <span>or</span>
           </div>
-          <div class="google__login">
-            <img src="assets/search.png" alt="google" />
-            <span>Sign up with Google</span>
+          <div class="login">
+            <div class="google__login">
+              <i class="ri-google-fill"></i>
+              <p>Sign up with Google</p>
+            </div>
+            <div class="apple__login">
+              <i class="ri-apple-fill"></i>
+              <p>Sign up with Apple</p>
+            </div>
           </div>
           <p class="create__account">
             Already have an account? <a href="login.html">sign-in</a>
