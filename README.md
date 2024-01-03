@@ -1,5 +1,5 @@
 <div align="center">
- ![Elegance logi](./assets/tab-logo.png)
+ <img src="./assets/tab-logo.png" alt="logo">
  <h2 align="center">Elegance eCommerce</h2>
   
   "Revolutionize your online shopping experience with our *Elegance* e-Commerce platform, delivering seamless transactions and unparalleled customer satisfaction."
