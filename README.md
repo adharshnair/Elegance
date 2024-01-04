@@ -1,19 +1,18 @@
 <div align="center">
- <img width="90" height="90" src="./assets/tab-logo.png" alt="logo">
+ <img width="90" height="60" src="./Readme-assets/logo.png" alt="logo">
  <h2 align="center">Elegance eCommerce</h2>
   
   "Revolutionize your online shopping experience with our *Elegance* e-Commerce platform, delivering seamless transactions and unparalleled customer satisfaction."
-  
+
 
 </div>
 
-### ➥ Live Demo: 
+### ➥ Live Demo:
 
-``` bash
+```bash
 https://adharshnair.github.io/Elegance-eCommerce/
 ```
 
+### ➥ Screenshot:
 
-### ➥ Screenshot: 
-
-![Elegance Desktop Demo](screenshot.png)
+![Elegance Desktop Demo](./Readme-assets/screenshot.png)
