@@ -17,7 +17,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
 }
 
 .container {
@@ -33,12 +32,17 @@ body {
   justify-content: center;
 }
 .container__left img {
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
+  padding: 1rem;
 }
 .container__right {
   padding: 2rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +58,6 @@ body {
 .logo {
   max-width: 150px;
   margin: auto;
-  /* margin-bottom: 1rem; */
 }
 
 .header {
@@ -264,5 +267,23 @@ form .button:hover {
   }
   .create__account {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .container__right {
+    padding: 0;
+  }
+
+  .container__left {
+    background-image: url("./assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
   }
 }
