@@ -11,3 +11,5 @@
 ```bash
 https://adharshnair.github.io/Elegance-eCommerce/
 ```
+
+In *Elegance* eCommerce website includes a **home page, product page, login page, and registration page**.
