@@ -169,7 +169,8 @@ h4 {
   color: inherit;
   transition: var(--transition-color);
 }
-.grey-color, .grey-link:hover {
+.grey-color,
+.grey-link:hover {
   color: var(--grey-color);
 }
 
@@ -179,8 +180,9 @@ input.checker {
   margin: 0 5px 0 2px;
   cursor: pointer;
 }
-input.checker::after, input.checker::before {
-  content: '';
+input.checker::after,
+input.checker::before {
+  content: "";
   display: block;
   position: absolute;
   top: 50%;
@@ -209,7 +211,6 @@ input.checker:checked::before {
 input.checker:checked::after {
   transform: translate(-50%, -50%) scale(1);
 }
-
 
 /* -------------------- *
     #GROUPED SELECTORS
@@ -318,7 +319,6 @@ input.checker:checked::after {
 .scrollto > .wrapper::-webkit-scrollbar-thumb:hover {
   background-color: var(--grey-color);
 }
-
 
 /* =================================================  #### HOME PAGE #### ================================================= */
 
@@ -541,7 +541,7 @@ form :where(input, textarea, select) {
   outline: 0;
   background-color: transparent;
   padding: 10px 20px;
-  transition: border .3s ;
+  transition: border 0.3s;
 }
 form :where(input, textarea, select):focus {
   border-color: var(--dark-color);
@@ -549,7 +549,6 @@ form :where(input, textarea, select):focus {
 form :where(input, textarea, select)::placeholder {
   color: var(--grey-color);
 }
-
 
 .inner-header .search .input {
   display: flex;
@@ -660,7 +659,6 @@ form :where(input, textarea, select)::placeholder {
   margin-top: 10px;
 }
 
-
 /* -------------------- *
     #SLIDER
  * -------------------- */
@@ -670,7 +668,7 @@ form :where(input, textarea, select)::placeholder {
 .slider .ob-cover {
   height: 430px;
 }
-.ob-cover img{
+.ob-cover img {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -722,7 +720,7 @@ form :where(input, textarea, select)::placeholder {
   background-color: transparent;
 }
 .custom-pagination .swiper-pagination-bullet::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 8px;
   height: 8px;
@@ -732,8 +730,7 @@ form :where(input, textarea, select)::placeholder {
   border: 1px solid var(--dark-color);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition: width .2s, height .2s, transform .2s;
-
+  transition: width 0.2s, height 0.2s, transform 0.2s;
 }
 .custom-pagination .swiper-pagination-bullet-active::before {
   background-color: transparent;
@@ -744,7 +741,7 @@ form :where(input, textarea, select)::placeholder {
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
-  transition: transform .75s, opacity .75s, visibility .75s;
+  transition: transform 0.75s, opacity 0.75s, visibility 0.75s;
 }
 .slider .swiper-slide-active .title-info :where(span, h3, .buton) {
   transform: translateY(0);
@@ -752,12 +749,11 @@ form :where(input, textarea, select)::placeholder {
   visibility: visible;
 }
 .slider .swiper-slide-active .title-info h3 {
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 .slider .swiper-slide-active .title-info .button {
-  transition-delay: .75s;
+  transition-delay: 0.75s;
 }
-
 
 /* -------------------- *
     #GUIDE
@@ -776,7 +772,7 @@ main > div .heading {
 .guide .dotgrid .wrapper {
   --grid-col: 260px;
 }
-:is(.guide, .fromblog) .dot-image .thumbnail{
+:is(.guide, .fromblog) .dot-image .thumbnail {
   position: relative;
   opacity: unset;
 }
@@ -801,14 +797,13 @@ main > div .heading {
   --border-color: #f0f9f8;
 }
 
-
 /* -------------------- *
     #CAROUSEL
  * -------------------- */
 
- .carousel .inner-wrapper {
+.carousel .inner-wrapper {
   position: relative;
- }
+}
 .carousel .dotgrid .wrapper {
   display: flex;
   grid-template-columns: unset;
@@ -825,9 +820,8 @@ main > div .heading {
   color: var(--dark-color);
   font-size: 20px;
   -webkit-tap-highlight-color: transparent;
-  transition: var(--transition-background),
-              var(--transition-background),
-              var(--transition-border);
+  transition: var(--transition-background), var(--transition-background),
+    var(--transition-border);
 }
 .carousel .nav > div:hover {
   color: var(--white-color);
@@ -902,8 +896,8 @@ main > div .heading {
 .filter-btn {
   cursor: pointer;
   position: relative;
-  padding: .2rem 2rem .1rem 2rem;
-  border-radius: .5rem;
+  padding: 0.2rem 2rem 0.1rem 2rem;
+  border-radius: 0.5rem;
   margin: 10px 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -917,7 +911,6 @@ main > div .heading {
   background-color: var(--dark-color);
   color: var(--white-color);
 }
-
 
 /* -------------------- *
     #BANNER
@@ -945,7 +938,6 @@ main > div .heading {
   --fs-max: 80px;
 }
 
-
 /* -------------------- *
     #FROM BLOG
  * -------------------- */
@@ -962,9 +954,8 @@ main > div .heading {
   border: 1px solid var(--light-color);
   color: var(--grey-color);
   padding: 1px 10px;
-  transition: var(--transition-background),
-              var(--transition-color),
-              var(--transition-border);
+  transition: var(--transition-background), var(--transition-color),
+    var(--transition-border);
 }
 .fromblog .dot-info > a:hover {
   background-color: var(--dark-color);
@@ -990,13 +981,16 @@ main > div .heading {
   justify-content: space-between;
   gap: 60px;
 }
+.inner-footer .list-block {
+  white-space: nowrap;
+}
 .inner-footer .subscribe {
   width: 100%;
 }
 .inner-footer .top .subscribe h3 {
   margin-bottom: 20px;
 }
-.inner-footer p{
+.inner-footer p {
   font-size: var(--fs14);
 }
 .inner-footer .search {
@@ -1012,6 +1006,28 @@ main > div .heading {
   padding-bottom: 40px;
 }
 
+.comp-address .address,
+.comp-address .contact,
+.comp-address .mail,
+.comp-address .calendar {
+  display: flex;
+}
+
+.comp-address .address p,
+.comp-address .contact p,
+.comp-address .mail p,
+.comp-address .calendar p {
+  margin-top: 5px;
+}
+
+.comp-address .address i,
+.comp-address .contact i,
+.comp-address .mail i,
+.comp-address .calendar i {
+  padding-right: 7px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
 
 /* =================================================  #### PRODUCT PAGE #### ================================================= */
 
@@ -1039,7 +1055,7 @@ main > div .heading {
   left: 0;
   width: 16px;
   height: 16px;
-  background-image: url("./assets/arrow.svg"); 
+  background-image: url("./assets/arrow.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1053,7 +1069,6 @@ main > div .heading {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 
 /* -------------------- *
     #PRODUCT IMAGE
@@ -1069,7 +1084,7 @@ main > div .heading {
   display: none;
 }
 .product .outer-thumb .item {
-  height: fit-content!important;
+  height: fit-content !important;
   cursor: pointer;
 }
 .product .thumb-wrap {
@@ -1086,13 +1101,12 @@ main > div .heading {
 }
 .product .outer-thumb .swiper-slide-thumb-active > img,
 .product .outer-thumb .item img {
-  transform: scale3d(.85, .85, .85);
+  transform: scale3d(0.85, 0.85, 0.85);
 }
-.product .custom-pagination  {
+.product .custom-pagination {
   position: relative;
   height: 50px;
 }
-
 
 /* -------------------- *
     #PRODUCT SUMMARY
@@ -1122,7 +1136,7 @@ main > div .heading {
 }
 .summary .product-price .wrap::before,
 .product .head-review span::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 12px;
@@ -1176,17 +1190,21 @@ main > div .heading {
 .summary .qty button {
   width: 40px;
   height: 40px;
-  transition: box-shadow .3s,
-              var(--transition-border),
-              var(--transition-background),
-              var(--transition-color);
+  transition: box-shadow 0.3s, var(--transition-border),
+    var(--transition-background), var(--transition-color);
 }
 .summary .product-color button {
   border-radius: 50%;
 }
-.summary .product-color button.tosca {background-color: #EFE3D5;}
-.summary .product-color button.brown {background-color: #000000;}
-.summary .product-color button.ocean {background-color: #7C6B4D;}
+.summary .product-color button.tosca {
+  background-color: #efe3d5;
+}
+.summary .product-color button.brown {
+  background-color: #000000;
+}
+.summary .product-color button.ocean {
+  background-color: #7c6b4d;
+}
 .summary .product-color button.selected,
 .summary .product-color button:hover:not(.selected) {
   box-shadow: inset 0 0 0 4px var(--white-color);
@@ -1210,7 +1228,7 @@ main > div .heading {
   pointer-events: none;
 }
 .summary .product-stock .wrap,
-.summary .product-control a  {
+.summary .product-control a {
   display: flex;
   gap: 5px;
 }
@@ -1296,7 +1314,6 @@ main > div .heading {
   line-height: 1;
 }
 
-
 /* -------------------- *
     #PRODUCT DETAILS
  * -------------------- */
@@ -1309,7 +1326,7 @@ main > div .heading {
   position: relative;
 }
 .product nav::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 58px;
@@ -1337,7 +1354,7 @@ main > div .heading {
   left: 0;
   bottom: -2px;
   background-color: var(--dark-color);
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .product nav ul li.active a::before {
   width: 100%;
@@ -1378,7 +1395,7 @@ main > div .heading {
   --grid-col: 250px;
   --gutter: 30px;
 }
-.product .product-about.custom h3{
+.product .product-about.custom h3 {
   font-size: 50px;
   font-weight: var(--fw600);
   text-align: center;
@@ -1387,7 +1404,7 @@ main > div .heading {
 .product .review {
   max-width: 770px;
 }
-.product .review .head-review{
+.product .review .head-review {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1437,7 +1454,6 @@ main > div .heading {
   padding-bottom: 40px;
 }
 
-
 /* -------------------- *
     #POPUP Model
  * -------------------- */
@@ -1479,7 +1495,8 @@ form .button button,
 .d-review .stars label {
   cursor: pointer;
 }
-.data-popup h3, form .button {
+.data-popup h3,
+form .button {
   text-align: center;
 }
 .d-review .data-content {
@@ -1505,7 +1522,6 @@ form .button button,
 .d-review .stars {
   flex-direction: row-reverse;
 }
-
 
 /* -------------------- *
     #Floating CART
@@ -1569,7 +1585,7 @@ form .button button,
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2px
+  gap: 2px;
 }
 .product-list .variats h4 {
   line-height: initial;
@@ -1635,7 +1651,7 @@ form .button button,
 .cart-footer form .submit:hover {
   background-color: var(--dark-color);
 }
-.cart-footer .math-pricing ul li{
+.cart-footer .math-pricing ul li {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -1643,9 +1659,9 @@ form .button button,
 .cart-footer .math-pricing ul ul {
   width: 100%;
 }
-.cart-footer .math-pricing ul li span:not(.value), 
+.cart-footer .math-pricing ul li span:not(.value),
 .cart-footer .math-pricing ul li label {
-  color: var(--grey-color)
+  color: var(--grey-color);
 }
 .cart-footer .math-pricing ul ul li:not(:first-child) {
   padding-left: 20px;
@@ -1679,8 +1695,6 @@ form .button button,
 .cart-menu .product-list > .wrapper {
   max-height: 400px;
 }
-
-
 
 /* =================================================  #### MEDIA QUERY for all pages #### ================================================= */
 
@@ -1811,7 +1825,7 @@ form .button button,
     scroll-snap-type: unset;
     overscroll-behavior-inline: unset;
   }
-  .scrollto .wrapper .item{
+  .scrollto .wrapper .item {
     width: unset;
   }
 
