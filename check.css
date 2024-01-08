@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Prata&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --primary-color: #2bcbba;
+  --light-color: #d1d8e0;
+  --grey-color: #687080;
+  --red-color: #ff4757;
+  --white-color: #ffffff;
+  --flashwhite-color: #f1f2f6;
+  --dark-color: #212121;
+
+  --primary-font: "Monstserrat", sans-serif;
+  --second-font: "Prata", sans-serif;
+  --fs14: 14px;
+  --fw600: 600;
+
+  /* Gaps */
+  --gap-9xs: 4px;
+  --gap-5xs: 8px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-2xs: 11px;
+  --padding-base: 16px;
+  --padding-xs: 12px;
+  --padding-5xl: 24px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+  --br-xs: 12px;
+  --br-7xs: 6px;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+input {
+  outline: 0;
+  border: 0;
+  color: var(--grey-color);
+}
+.button1 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 165%;
+}
+.button {
+  position: absolute;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+}
+.button {
+  top: 550px;
+  left: 500px;
+  border-radius: var(--br-xs);
+  width: 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-2xs) var(--padding-5xl);
+  color: var(--dark-color);
+}
+
+.heroicons-outlinecheck {
+  display: flex;
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.billing-address-is {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 165%;
+  font-weight: 500;
+}
+.billing-addres-checkbox {
+  position: absolute;
+  top: 510px;
+  left: 200px;
+  width: 440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  color: var(--grey-color);
+}
+.box,
+.label {
+  align-self: stretch;
+}
+.label {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 165%;
+}
+.box {
+  border-radius: var(--br-xs);
+  background-color: var(--base-50);
+  border: 1px solid var(--grey-color);
+  flex-direction: row;
+  padding: var(--padding-2xs) var(--padding-base);
+  color: var(--grey-color);
+}
+.bill-card {
+  flex: 1;
+  flex-direction: column;
+}
+.box,
+.input-field,
+.zip-code-and-city,
+.excvv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input-field {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.zip-code-and-city {
+  position: absolute;
+  top: 210px;
+  left: 200px;
+  width: 440px;
+  flex-direction: row;
+  gap: 24px;
+}
+.excvv {
+  position: absolute;
+  top: 410px;
+  left: 200px;
+  width: 440px;
+  flex-direction: row;
+  gap: 24px;
+}
+.vuesaxboldarrow-down-icon {
+  position: relative;
+  width: 20px;
+  height: 30px;
+  object-fit: cover;
+}
+.box2,
+.input-field2,
+.input-field3 {
+  display: flex;
+  justify-content: flex-start;
+}
+.box2 {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--base-50);
+  border: 1px solid var(--grey-color);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-2xs) var(--padding-xs) var(--padding-2xs)
+    var(--padding-base);
+  gap: var(--gap-xs);
+  color: var(--grey-coloe);
+}
+.input-field2 {
+  position: absolute;
+  top: 210px;
+  left: 700px;
+  width: 440px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+}
+
+.input-field3 {
+  position: absolute;
+  left: 200px;
+  width: 440px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+}
+.input-field3 {
+  top: 312px;
+}
+.vuesaxlinearadd-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+.b,
+.visa-icon {
+  position: absolute;
+}
+.visa-icon {
+  display: flex;
+  top: 4px;
+  left: 146px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.b {
+  top: 15px;
+  left: 48px;
+  letter-spacing: 0.01em;
+  line-height: 165%;
+}
+.visa {
+  position: relative;
+  width: 214px;
+  height: 56px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.paypal-icon {
+  display: flex;
+  position: absolute;
+  top: 4px;
+  left: 154px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  object-fit: cover;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.divider {
+  position: relative;
+  border-right: 1px solid var(--grey-color);
+  box-sizing: border-box;
+  width: 1px;
+  height: 13px;
+}
+.payment-method,
+.type {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.payment-method {
+  position: absolute;
+  top: 312px;
+  left: 700px;
+  width: 440px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.flags-us {
+  position: relative;
+  width: 22.4px;
+  height: 30px;
+  object-fit: cover;
+}
+.box4 {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--base-50);
+  border: 1px solid var(--dark-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-base);
+  gap: var(--gap-xs);
+}
+.input-field4 {
+  position: absolute;
+  top: 105px;
+  left: 700px;
+  width: 440px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+}
+.box5,
+.input-field4,
+.input-field5 {
+  display: flex;
+  justify-content: flex-start;
+}
+.box5 {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--base-50);
+  border: 1px solid var(--dark-color);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-2xs) var(--padding-base);
+}
+.input-field5 {
+  position: absolute;
+  top: 105px;
+  left: 200px;
+  width: 440px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+}
+.container {
+  background-color: var(--base-50);
+  width: 100%;
+  height: 100%;
+  font-size: var(--body-medium-medium-size);
+  font-family: var(--heading-24);
+}
