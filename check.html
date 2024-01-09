@@ -337,8 +337,8 @@
 
       <!--------- CHECKOUT --------->
       <div class="container">
-        <div class="button">
-          <a href="./index.html" class="button1"
+        <div class="button1">
+          <a href="./index.html" class="button"
             ><strong>Pay $4347.00</strong></a
           >
         </div>
@@ -354,27 +354,43 @@
           <div class="input-field">
             <b class="label">Zip code</b>
             <div class="box">
-              <input class="billing-address-is" placeholder="Ex. 12345" />
+              <input
+                class="billing-address-is"
+                placeholder="Ex. 12345"
+                id="zip"
+              />
             </div>
           </div>
           <div class="input-field">
             <b class="label">City</b>
             <div class="box">
-              <input class="billing-address-is" placeholder="Ex. New York" />
+              <input
+                class="billing-address-is"
+                placeholder="Ex. New York"
+                id="city"
+              />
             </div>
           </div>
         </div>
         <div class="input-field2">
           <b class="label">Billing address</b>
           <div class="box2">
-            <input class="billing-address-is" placeholder="United States" />
+            <input
+              class="billing-address-is"
+              placeholder="United States"
+              id="add"
+            />
             <i class="ri-map-pin-fill vuesaxboldarrow-down-icon"></i>
           </div>
         </div>
         <div class="input-field3">
           <b class="label">Card holder name</b>
           <div class="box">
-            <input class="billing-address-is" placeholder="Ex. Jane Cooper" />
+            <input
+              class="billing-address-is"
+              placeholder="Ex. Jane Cooper"
+              id="cname"
+            />
           </div>
         </div>
         <div class="payment-method">
@@ -382,12 +398,11 @@
             <b class="button1">Payment method</b>
           </div>
           <div class="type">
-            <div class="visa">
+            <div class="visa credit">
               <i class="ri-bank-card-fill visa-icon"></i>
-
               <b class="b">Pay via Visa</b>
             </div>
-            <div class="visa">
+            <div class="visa ppal">
               <i class="ri-paypal-fill paypal-icon"></i>
               <b class="b">Pay via Paypal</b>
             </div>
@@ -397,13 +412,18 @@
           <div class="input-field">
             <b class="label">Expiry</b>
             <div class="box">
-              <input class="billing-address-is" placeholder="12/23" />
+              <input class="billing-address-is" placeholder="12/23" id="exp" />
             </div>
           </div>
           <div class="input-field">
             <b class="label">CVV</b>
             <div class="box">
-              <input type="password" class="billing-address-is" placeholder="123" />
+              <input
+                type="password"
+                class="billing-address-is"
+                placeholder="123"
+                id="cv"
+              />
             </div>
           </div>
         </div>
@@ -412,13 +432,21 @@
             <b class="label">Phone number</b>
             <div class="box4">
               <i class="ri-phone-fill flags-us"></i>
-              <input class="billing-address-is" placeholder="(201) 830-8210" />
+              <input
+                class="billing-address-is"
+                placeholder="(201) 830-8210"
+                id="ph"
+              />
             </div>
           </div>
           <div class="input-field5">
             <b class="label">Email</b>
             <div class="box5">
-              <input class="billing-address-is" placeholder="work@domain.com" />
+              <input
+                class="billing-address-is"
+                placeholder="work@domain.com"
+                id="eid"
+              />
             </div>
           </div>
         </div>

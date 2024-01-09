@@ -38,11 +38,13 @@ input {
   outline: 0;
   border: 0;
   color: var(--grey-color);
+  background: transparent;
 }
 .button1 {
   position: relative;
   letter-spacing: 0.01em;
   line-height: 165%;
+  cursor: pointer;
 }
 .button {
   position: absolute;
@@ -50,8 +52,8 @@ input {
   box-sizing: border-box;
 }
 .button {
-  top: 550px;
-  left: 500px;
+  top: 480px;
+  left: 400px;
   border-radius: var(--br-xs);
   width: 440px;
   display: flex;
@@ -81,6 +83,7 @@ input {
   position: relative;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .billing-address-is {
   flex: 1;
@@ -91,7 +94,7 @@ input {
 }
 .billing-addres-checkbox {
   position: absolute;
-  top: 510px;
+  top: 515px;
   left: 200px;
   width: 440px;
   display: flex;
@@ -100,6 +103,7 @@ input {
   justify-content: flex-start;
   gap: var(--gap-xs);
   color: var(--grey-color);
+  cursor: context-menu;
 }
 .box,
 .label {
@@ -138,14 +142,14 @@ input {
 .zip-code-and-city {
   position: absolute;
   top: 210px;
-  left: 200px;
+  left: 700px;
   width: 440px;
   flex-direction: row;
   gap: 24px;
 }
 .excvv {
   position: absolute;
-  top: 410px;
+  top: 420px;
   left: 200px;
   width: 440px;
   flex-direction: row;
@@ -178,7 +182,7 @@ input {
 .input-field2 {
   position: absolute;
   top: 210px;
-  left: 700px;
+  left: 200px;
   width: 440px;
   flex-direction: column;
   align-items: flex-start;
@@ -187,7 +191,7 @@ input {
 
 .input-field3 {
   position: absolute;
-  left: 200px;
+  left: 700px;
   width: 440px;
   flex-direction: column;
   align-items: flex-start;
@@ -209,7 +213,7 @@ input {
 .visa-icon {
   display: flex;
   top: 4px;
-  left: 146px;
+  /* left: 146px; */
   width: 48px;
   height: 48px;
   object-fit: cover;
@@ -230,11 +234,20 @@ input {
   border: 1px solid #000;
   border-radius: 10px;
 }
+.visa i {
+  left: 20px;
+  padding-right: 16px;
+}
+.visa b {
+  left: 80px;
+}
+.ppal b {
+  left: 65px;
+}
 .paypal-icon {
   display: flex;
   position: absolute;
   top: 4px;
-  left: 154px;
   width: 48px;
   height: 48px;
   overflow: hidden;
@@ -261,10 +274,15 @@ input {
 .payment-method {
   position: absolute;
   top: 312px;
-  left: 700px;
+  left: 200px;
   width: 440px;
   flex-direction: column;
   gap: var(--gap-5xs);
+  cursor: pointer;
+}
+.visa:hover {
+  background-color: var(--dark-color);
+  color: var(--white-color);
 }
 .flags-us {
   position: relative;
@@ -323,4 +341,101 @@ input {
   height: 100%;
   font-size: var(--body-medium-medium-size);
   font-family: var(--heading-24);
+}
+
+/*--------------------------------- MEDIA QUERY ---------------------------------*/
+@media (max-width: 768px) {
+  .input-field5 {
+    width: 250px;
+    left: 50px;
+  }
+  .input-field4 {
+    width: 250px;
+    left: 350px;
+  }
+  .input-field2 {
+    left: 50px;
+    width: 550px;
+  }
+  .payment-method {
+    top: 430px;
+    left: 50px;
+  }
+  .zip-code-and-city {
+    top: 320px;
+    left: 50px;
+    width: 550px;
+  }
+  .input-field3 {
+    top: 540px;
+    left: 50px;
+    width: 550px;
+  }
+  .excvv {
+    top: 650px;
+    left: 50px;
+    width: 550px;
+  }
+  .billing-addres-checkbox {
+    top: 750px;
+    left: 50px;
+  }
+  .button {
+    top: 720px;
+    left: 100px;
+  }
+}
+
+@media (max-width: 562px) {
+  .input-field5 {
+    width: 390px;
+    left: 50px;
+  }
+  .input-field4 {
+    top: 210px;
+    width: 390px;
+    left: 50px;
+  }
+  .input-field2 {
+    top: 320px;
+    left: 50px;
+    width: 390px;
+  }
+  .payment-method {
+    top: 540px;
+    left: 50px;
+  }
+  .visa {
+    width: 190px;
+  }
+  .ppal b {
+    left: 60px;
+  }
+  .credit b {
+    left: 65px;
+  }
+  .zip-code-and-city {
+    top: 430px;
+    left: 50px;
+    width: 390px;
+  }
+  .input-field3 {
+    top: 650px;
+    left: 50px;
+    width: 390px;
+  }
+  .excvv {
+    top: 750px;
+    left: 50px;
+    width: 390px;
+  }
+  .billing-addres-checkbox {
+    top: 850px;
+    left: 50px;
+  }
+  .button {
+    top: 820px;
+    left: 130px;
+    width: 50%;
+  }
 }
