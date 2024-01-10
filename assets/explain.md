@@ -271,4 +271,4 @@ function resetActiveBtn() {
    - **Definition:** `autoHeight` is a configuration option in the Swiper library that automatically adjusts the height of the slider based on the height of the currently active slide.
 
 10. **pagination:**
-   - **Definition:** Pagination is a feature in Swiper that adds navigation dots or bullets to indicate the current position in the slider. It's often used for sliders with multiple slides.
+    - **Definition:** Pagination is a feature in Swiper that adds navigation dots or bullets to indicate the current position in the slider. It's often used for sliders with multiple slides.
