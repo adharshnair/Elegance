@@ -243,3 +243,32 @@ function resetActiveBtn() {
 ```
 
 ## Key Points
+1. **Swiper:**
+   - **Definition:** Swiper is a modern, mobile-friendly slider library for touch sliders and carousels. In this code, it is used to create sliders and carousels for different sections of the webpage.
+
+2. **forEach:**
+   - **Definition:** The `forEach` method is used to execute a provided function once for each element in an array or NodeList. It simplifies iterating through elements.
+
+3. **classList:**
+   - **Definition:** The `classList` property is an interface in JavaScript that represents the classes of an HTML element. It provides methods like `add`, `remove`, and `toggle` to manipulate the classes.
+
+4. **addEventListener:**
+   - **Definition:** `addEventListener` is a method used to attach an event handler to an HTML element. It allows the execution of a function or code block in response to a specific event, such as a click.
+
+5. **querySelector:**
+   - **Definition:** `querySelector` is a method that selects the first element in the document that matches a specified CSS selector. It is used to find and interact with specific elements in the HTML.
+
+6. **toggle:**
+   - **Definition:** The `toggle` method is used to add a class to an element if it doesn't exist and remove it if it does. In this context, it is often used to toggle the visibility of certain elements.
+
+7. **if statement:**
+   - **Definition:** An `if` statement is a conditional statement in programming that evaluates a condition and executes a block of code if the condition is true.
+
+8. **breakpoints:**
+   - **Definition:** Breakpoints are specific screen widths at which a website's layout or styling changes. In the context of the Swiper library, they determine the number of slides displayed based on the screen size.
+
+9. **autoHeight:**
+   - **Definition:** `autoHeight` is a configuration option in the Swiper library that automatically adjusts the height of the slider based on the height of the currently active slide.
+
+10. **pagination:**
+   - **Definition:** Pagination is a feature in Swiper that adds navigation dots or bullets to indicate the current position in the slider. It's often used for sliders with multiple slides.
