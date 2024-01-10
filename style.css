@@ -1846,6 +1846,7 @@ form .button {
     --gutter: 40px;
   }
 }
+
 @media (min-width: 1400px) {
   .mega-content {
     grid-template-columns: 1fr 1fr;

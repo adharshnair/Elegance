@@ -96,7 +96,6 @@ input {
   position: absolute;
   top: 515px;
   left: 200px;
-  width: 440px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -213,7 +212,6 @@ input {
 .visa-icon {
   display: flex;
   top: 4px;
-  /* left: 146px; */
   width: 48px;
   height: 48px;
   object-fit: cover;
@@ -229,7 +227,7 @@ input {
 }
 .visa {
   position: relative;
-  width: 214px;
+  width: 190px;
   height: 56px;
   border: 1px solid #000;
   border-radius: 10px;
@@ -239,17 +237,18 @@ input {
   padding-right: 16px;
 }
 .visa b {
-  left: 80px;
+  left: 65px;
+  font-size: 1rem;
 }
 .ppal b {
-  left: 65px;
+  left: 55px;
 }
 .paypal-icon {
   display: flex;
   position: absolute;
-  top: 4px;
-  width: 48px;
-  height: 48px;
+  top: 10px;
+  width: 38px;
+  height: 38px;
   overflow: hidden;
   object-fit: cover;
   font-size: 2rem;
@@ -275,7 +274,6 @@ input {
   position: absolute;
   top: 312px;
   left: 200px;
-  width: 440px;
   flex-direction: column;
   gap: var(--gap-5xs);
   cursor: pointer;
@@ -344,7 +342,86 @@ input {
 }
 
 /*--------------------------------- MEDIA QUERY ---------------------------------*/
-@media (max-width: 768px) {
+@media (max-width: 481px) {
+  .input-field5 {
+    width: 340px;
+    left: 20px;
+  }
+  .input-field4 {
+    top: 210px;
+    width: 340px;
+    left: 20px;
+  }
+  .input-field2 {
+    top: 320px;
+    left: 20px;
+    width: 340px;
+  }
+  .payment-method {
+    top: 540px;
+    left: 20px;
+  }
+  .visa {
+    width: 150px;
+  }
+  .ppal i {
+    left: 25px;
+  }
+  .ppal b {
+    visibility: hidden;
+    position: relative;
+    left: 60px;
+  }
+  .ppal:after {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    content: "Paypal";
+  }
+  .credit b {
+    left: 55px;
+    visibility: hidden;
+    position: relative;
+  }
+  .credit:after {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    content: "Visa";
+  }
+  .zip-code-and-city {
+    top: 430px;
+    left: 20px;
+    width: 340px;
+  }
+  .input-field3 {
+    top: 650px;
+    left: 20px;
+    width: 340px;
+  }
+  .excvv {
+    top: 750px;
+    left: 20px;
+    width: 340px;
+  }
+  .billing-addres-checkbox {
+    top: 850px;
+    left: 20px;
+  }
+  .button {
+    top: 820px;
+    left: 90px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 568px) {
   .input-field5 {
     width: 250px;
     left: 50px;
@@ -352,10 +429,12 @@ input {
   .input-field4 {
     width: 250px;
     left: 350px;
+    top: 105px;
   }
   .input-field2 {
     left: 50px;
     width: 550px;
+    top: 210px;
   }
   .payment-method {
     top: 430px;
@@ -382,60 +461,50 @@ input {
   }
   .button {
     top: 720px;
-    left: 100px;
+    left: 150px;
   }
 }
 
-@media (max-width: 562px) {
+@media (min-width: 1200px) {
   .input-field5 {
-    width: 390px;
-    left: 50px;
+    width: 420px;
+    left: 200px;
   }
   .input-field4 {
-    top: 210px;
-    width: 390px;
-    left: 50px;
+    width: 420px;
+    left: 700px;
+    top: 100px;
   }
   .input-field2 {
-    top: 320px;
-    left: 50px;
-    width: 390px;
+    left: 200px;
+    width: 425px;
+    top: 220px;
   }
   .payment-method {
-    top: 540px;
-    left: 50px;
-  }
-  .visa {
-    width: 190px;
-  }
-  .ppal b {
-    left: 60px;
-  }
-  .credit b {
-    left: 65px;
+    top: 330px;
+    left: 200px;
   }
   .zip-code-and-city {
-    top: 430px;
-    left: 50px;
-    width: 390px;
+    top: 210px;
+    left: 700px;
+    width: 420px;
   }
   .input-field3 {
-    top: 650px;
-    left: 50px;
-    width: 390px;
+    top: 330px;
+    left: 700px;
+    width: 420px;
   }
   .excvv {
-    top: 750px;
-    left: 50px;
-    width: 390px;
+    top: 450px;
+    left: 200px;
+    width: 420px;
   }
   .billing-addres-checkbox {
-    top: 850px;
-    left: 50px;
+    top: 550px;
+    left: 200px;
   }
   .button {
-    top: 820px;
-    left: 130px;
-    width: 50%;
+    top: 520px;
+    left: 30%;
   }
 }
