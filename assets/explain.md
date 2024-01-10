@@ -241,3 +241,5 @@ function resetActiveBtn() {
   });
 }
 ```
+
+## Key Points
