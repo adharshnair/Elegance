@@ -46,12 +46,12 @@ input {
   line-height: 165%;
   cursor: pointer;
 }
-.button {
+.button2 {
   position: absolute;
   background-color: var(--primary-color);
   box-sizing: border-box;
 }
-.button {
+.button2 {
   top: 480px;
   left: 400px;
   border-radius: var(--br-xs);
@@ -414,7 +414,7 @@ input {
     top: 850px;
     left: 20px;
   }
-  .button {
+  .button2 {
     top: 820px;
     left: 90px;
     width: 50%;
@@ -459,9 +459,10 @@ input {
     top: 750px;
     left: 50px;
   }
-  .button {
+  .button2 {
     top: 720px;
     left: 150px;
+    width: 50%;
   }
 }
 
@@ -503,7 +504,7 @@ input {
     top: 550px;
     left: 200px;
   }
-  .button {
+  .button2 {
     top: 520px;
     left: 30%;
   }
