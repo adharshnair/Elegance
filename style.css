@@ -53,6 +53,32 @@ body {
   background-color: var(--white-color);
 }
 
+/* Targeting the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle on the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--grey-color);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle when it is dragged */
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--light-color);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -281,6 +307,7 @@ input.checker:checked::after {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: auto;
 }
 .overlay {
   background-color: var(--dark-color);
@@ -1554,6 +1581,7 @@ form .button {
 .cart-menu .cart-outer > .wrapper {
   height: 100vh;
   padding: 0;
+  overflow: auto;
 }
 .cart-menu .cart-header {
   padding: 30px 0;
