@@ -53,30 +53,8 @@ body {
   background-color: var(--white-color);
 }
 
-/* Targeting the scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Handle on the scrollbar */
-::-webkit-scrollbar-thumb {
-  background-color: var(--grey-color);
-  border-radius: 3px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #999;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle when it is dragged */
-::-webkit-scrollbar-thumb:active {
-  background-color: var(--light-color);
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -331,13 +309,13 @@ input.checker:checked::after {
   scroll-snap-type: inline mandatory;
 }
 .scrollto > .wrapper::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 7px;
+  height: 7px;
 }
 .scrollto > .wrapper::-webkit-scrollbar-thumb {
   --border-color: var(--white-color);
   background-color: var(--light-color);
-  border: 3px solid var(--border-color);
+  border: 1px solid var(--border-color);
   border-radius: 20px;
 }
 .scrollto > .wrapper:hover::-webkit-scrollbar-thumb {
