@@ -1671,6 +1671,13 @@ form .button {
 .cart-footer .math-pricing ul ul {
   width: 100%;
 }
+.cart-footer .math-pricing ul ul li > div {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  gap: 12px;
+  padding-bottom: 14px;
+}
 .cart-footer .math-pricing ul li span:not(.value),
 .cart-footer .math-pricing ul li label {
   color: var(--grey-color);

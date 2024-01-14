@@ -167,15 +167,13 @@ function resetActiveBtn() {
 
 /* ---------------------- FIXED HEADER (while scrolling) ----------------------*/
 window.onscroll = function () {
-  myFunction();
+  stickyheader();
 };
 
 var header = document.getElementById("header");
-
-// Get the offset position of the navbar
 var scroll = header.offsetTop;
 
-function myFunction() {
+function stickyheader() {
   if (window.pageYOffset > scroll) {
     header.classList.add("scroll");
     header.classList.add("active");
