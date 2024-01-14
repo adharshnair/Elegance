@@ -325,6 +325,18 @@ input.checker:checked::after {
 /* -------------------- *
     #HEADER
  * -------------------- */
+
+.scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--white-color);
+  z-index: 1001;
+  transition: box-shadow 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+.scroll.active {
+  box-shadow: hsla(0 0% 0% / 0.2) 0 0.5rem 1rem;
+}
 .inner-header {
   line-height: 80px;
 }

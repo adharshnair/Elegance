@@ -164,3 +164,23 @@ function resetActiveBtn() {
     btn.classList.remove("active-btn");
   });
 }
+
+/* ---------------------- FIXED HEADER (while scrolling) ----------------------*/
+window.onscroll = function () {
+  myFunction();
+};
+
+var header = document.getElementById("header");
+
+// Get the offset position of the navbar
+var scroll = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > scroll) {
+    header.classList.add("scroll");
+    header.classList.add("active");
+  } else {
+    header.classList.remove("scroll");
+    header.classList.remove("active");
+  }
+}
