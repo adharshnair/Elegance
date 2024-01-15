@@ -2021,6 +2021,14 @@ form .button {
   .carousel .dotgrid .item {
     width: 270px;
   }
+  .cart-total .has-bg::before,
+  .cart-total .has-bg::after {
+    content: "";
+    background-color: var(--dark-color);
+    width: 100%;
+    bottom: auto;
+    top: 0;
+  }
   .cart-total .has-bg::before {
     right: 100%;
     left: auto;
