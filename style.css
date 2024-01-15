@@ -2025,6 +2025,7 @@ form .button {
     content: "";
     background-color: var(--dark-color);
     width: 100%;
+    border-radius: 20px;
     bottom: auto;
     top: 0;
   }
