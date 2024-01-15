@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout | Elegance</title>
+    <title>Cart | Elegance</title>
 
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="check.css" />
 
     <!-- REMIXICON Link -->
     <link
@@ -26,10 +25,9 @@
     />
   </head>
   <body>
-    <div id="page" class="page-home">
-      <!--------- HEADER --------->
+    <div id="page" class="page-cart">
       <header>
-        <div class="inner-header">
+        <div class="inner-header" id="header">
           <div class="container wide">
             <div class="wrap">
               <div class="header-left">
@@ -60,7 +58,7 @@
                 <nav class="menu">
                   <ul>
                     <li>
-                      <a href=""><span>Home</span></a>
+                      <a href="./index.html"><span>Home</span></a>
                     </li>
                     <li>
                       <a href="product-page.html">
@@ -188,13 +186,13 @@
                                         ></a>
                                         <div class="thumbnail">
                                           <img
-                                            src="./assets/product_03.PNG"
+                                            src="./assets/product_03.png"
                                             alt=""
                                           />
                                         </div>
                                         <div class="thumbnail hover">
                                           <img
-                                            src="./assets/product_03b.PNG"
+                                            src="./assets/product_03b.png"
                                             alt=""
                                           />
                                         </div>
@@ -310,7 +308,7 @@
                     </li>
                     <li>
                       <a href="#0" trigger-button data-target="data-cart"
-                        ><span class="item-floating">0</span
+                        ><span class="item-floating">3</span
                         ><i class="ri-shopping-bag-line"></i
                       ></a>
                     </li>
@@ -319,6 +317,7 @@
               </div>
             </div>
           </div>
+
           <div id="search-float" class="search-float">
             <div class="container wide">
               <form action="" class="search">
@@ -334,126 +333,301 @@
               </form>
             </div>
           </div>
+          <div class="overlay" data-overlay></div>
         </div>
       </header>
+      <main>
+        <div class="container">
+          <div class="wrap">
+            <div class="breadcrumb list-inline">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Cart</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--------- PRODUCT-INFO Section --------->
+        <div class="section">
+          <div class="container">
+            <div class="wrap">
+              <div class="heading">
+                <h1 class="title">Cart</h1>
+              </div>
+              <div class="content">
+                <div class="cart-table">
+                  <div class="product-list has-bg">
+                    <div class="table-title">
+                      <ul>
+                        <li class="dotgrid">
+                          <div class="grouping wrapper">
+                            <span></span>
+                            <span>Product</span>
+                          </div>
 
-      <!--------- CHECKOUT --------->
-      <div class="container">
-        <div class="button1">
-          <a href="./index.html" class="button2"
-            ><strong>Pay $4347.00</strong></a
-          >
-        </div>
-        <div class="billing-addres-checkbox">
-          <div class="checkbox">
-            <i class="ri-checkbox-line heroicons-outlinecheck"></i>
-          </div>
-          <div class="billing-address-is">
-            Billing address is same as shipping
-          </div>
-        </div>
-        <div class="zip-code-and-city">
-          <div class="input-field">
-            <b class="label">Zip code</b>
-            <div class="box">
-              <input
-                class="billing-address-is"
-                placeholder="Ex. 12345"
-                id="zip"
-              />
+                          <div class="grouping wrapper">
+                            <span>Price</span>
+                            <span>Qty</span>
+                            <span>Total</span>
+                            <span></span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabel-content">
+                      <ul>
+                        <li class="dotgrid">
+                          <div class="grouping wrapper">
+                            <div class="thumbnail ob-cover">
+                              <a href="">
+                                <img src="./assets/product_01.PNG" alt="" />
+                              </a>
+                            </div>
+                            <div class="variats">
+                              <h4 class="dot-title">
+                                <a href="">Mr Bowerbird</a>
+                              </h4>
+                              <div class="color grey-color">
+                                <span>Color:</span>
+                                <span>White</span>
+                              </div>
+                              <div class="size grey-color">
+                                <span>Size:</span>
+                                <span>L</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grouping wrapper">
+                            <div class="price">$725</div>
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="price-sub">$725</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-close-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="dotgrid">
+                          <div class="grouping wrapper">
+                            <div class="thumbnail ob-cover">
+                              <a href="">
+                                <img src="./assets/product_02.PNG" alt="" />
+                              </a>
+                            </div>
+                            <div class="variats">
+                              <h4 class="dot-title">
+                                <a href="">98 Degree North</a>
+                              </h4>
+                              <div class="color grey-color">
+                                <span>Color:</span>
+                                <span>Black</span>
+                              </div>
+                              <div class="size grey-color">
+                                <span>Size:</span>
+                                <span>L</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grouping wrapper">
+                            <div class="price">$1400</div>
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="price-sub">$1400</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-close-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="dotgrid">
+                          <div class="grouping wrapper">
+                            <div class="thumbnail ob-cover">
+                              <a href="">
+                                <img
+                                  src="./assets/producthoodie_6.PNG"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                            <div class="variats">
+                              <h4 class="dot-title">
+                                <a href="">Roadster</a>
+                              </h4>
+                              <div class="color grey-color">
+                                <span>Color:</span>
+                                <span>Maroon</span>
+                              </div>
+                              <div class="size grey-color">
+                                <span>Size:</span>
+                                <span>L</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grouping wrapper">
+                            <div class="price">$1400</div>
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="price-sub">$1400</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-close-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-total">
+                  <div class="product-list has-bg">
+                    <div class="table-content">
+                      <div class="grouping">
+                        <div class="add-note">
+                          <textarea
+                            rows="3"
+                            placeholder="Additional delivery instruction *"
+                          ></textarea>
+                        </div>
+                        <div class="sub-total">
+                          <div class="sub-pricing">
+                            <span>Subtotal</span>
+                            <span class="sub-total-price">$4347.00</span>
+                          </div>
+                          <div class="sub-terms">
+                            <input type="checkbox" class="check" id="terms" />
+                            <label for="terms"
+                              >I agree to
+                              <a href="" class="grey-link"
+                                >Terms and Condition</a
+                              ></label
+                            >
+                          </div>
+                          <div class="button">
+                            <a href="" class="secondary-btn">Checkout</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="input-field">
-            <b class="label">City</b>
-            <div class="box">
-              <input
-                class="billing-address-is"
-                placeholder="Ex. New York"
-                id="city"
-              />
+        </div>
+      </main>
+      <!--------- FOOTER Section --------->
+      <footer>
+        <div class="inner-footer">
+          <div class="container">
+            <div class="wrap">
+              <div class="top">
+                <div class="subscribe">
+                  <h3>Get voucher from us</h3>
+                  <p class="grey-color">
+                    Enter your email below to be the first to know about new
+                    <br />
+                    collections and product launches
+                  </p>
+                  <form action="" class="search">
+                    <i class="ri-mail-line"></i>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Enter your mail"
+                    />
+                    <input type="submit" class="submit" />
+                    <i class="ri-arrow-right-line"></i>
+                  </form>
+                </div>
+                <div class="list-block">
+                  <h3 class="dot-title">Service</h3>
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="list-block">
+                  <h3 class="dot-title">Pages</h3>
+                  <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="check.html">Checkout</a></li>
+                  </ul>
+                </div>
+                <div class="list-block">
+                  <h3 class="dot-title">Contact Information</h3>
+                  <div class="comp-address grey-color">
+                    <div class="address">
+                      <i class="ri-map-pin-2-fill"></i>
+                      <p>SkyTower 2 No.1<br />Toronto - CA</p>
+                    </div>
+                    <div class="contact">
+                      <i class="ri-phone-fill"></i>
+                      <p>+1-890-1234567</p>
+                    </div>
+                    <div class="mail">
+                      <i class="ri-mail-fill"></i>
+                      <p>support@elegance.com</p>
+                    </div>
+                    <div class="calendar">
+                      <i class="ri-calendar-fill"></i>
+                      <p>
+                        Weekdays: 8AM to 9PM<br />
+                        Saturday: 8AM to 4PM<br />
+                        Sunday: Closed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="list-inline">
+                  <ul>
+                    <li>
+                      <a href=""><i class="ri-facebook-line"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="ri-pinterest-line"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="ri-linkedin-line"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="copyright">
+                  <p>Copyright &copy; 2023 - Elegance | All rights reserved</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="input-field2">
-          <b class="label">Billing address</b>
-          <div class="box2">
-            <input
-              class="billing-address-is"
-              placeholder="United States"
-              id="add"
-            />
-            <i class="ri-map-pin-fill vuesaxboldarrow-down-icon"></i>
-          </div>
-        </div>
-        <div class="input-field3">
-          <b class="label">Card holder name</b>
-          <div class="box">
-            <input
-              class="billing-address-is"
-              placeholder="Ex. Jane Cooper"
-              id="cname"
-            />
-          </div>
-        </div>
-        <div class="payment-method">
-          <div class="label-and-add-new">
-            <b class="button1">Payment method</b>
-          </div>
-          <div class="type">
-            <div class="visa credit">
-              <i class="ri-bank-card-fill visa-icon"></i>
-              <b class="b">Pay via Visa</b>
-            </div>
-            <div class="visa ppal">
-              <i class="ri-paypal-fill paypal-icon"></i>
-              <b class="b">Pay via Paypal</b>
-            </div>
-          </div>
-        </div>
-        <div class="excvv">
-          <div class="input-field">
-            <b class="label">Expiry</b>
-            <div class="box">
-              <input class="billing-address-is" placeholder="12/23" id="exp" />
-            </div>
-          </div>
-          <div class="input-field">
-            <b class="label">CVV</b>
-            <div class="box">
-              <input
-                type="password"
-                class="billing-address-is"
-                placeholder="123"
-                id="cv"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="number-mail">
-          <div class="input-field4">
-            <b class="label">Phone number</b>
-            <div class="box4">
-              <i class="ri-phone-fill flags-us"></i>
-              <input
-                class="billing-address-is"
-                placeholder="(201) 830-8210"
-                id="ph"
-              />
-            </div>
-          </div>
-          <div class="input-field5">
-            <b class="label">Email</b>
-            <div class="box5">
-              <input
-                class="billing-address-is"
-                placeholder="work@domain.com"
-                id="eid"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
+
     <div class="overlay" data-overlay></div>
 
     <!--------- MOBILE MENU --------->
@@ -525,6 +699,99 @@
       </div>
     </div>
 
+    <!--------- ASK QUESTION Section --------->
+    <div id="data-question" class="data-popup d-question">
+      <div class="wrap">
+        <div class="data-content">
+          <a href="#0" class="close-trigger" close-button
+            ><i class="ri-close-line"></i
+          ></a>
+          <h3>The Question</h3>
+          <form action="https://formspree.io/f/mleyqvlj" method="post">
+            <div>
+              <input name="Name" type="text" placeholder="Name" required />
+            </div>
+            <div>
+              <input name="Email" type="email" placeholder="Email" required />
+            </div>
+            <div>
+              <textarea
+                name="Question"
+                placeholder="Your Question is..."
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" class="secondary-btn" name="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--------- REVIEWS Section --------->
+    <div id="data-review" class="data-popup d-review">
+      <div class="wrap">
+        <div class="data-content">
+          <a href="#0" class="close-trigger" close-button
+            ><i class="ri-close-line"></i
+          ></a>
+          <h3>Write a Review</h3>
+          <form action="https://formspree.io/f/mleyqvlj" method="post">
+            <div class="dotgrid">
+              <div class="wrapper">
+                <div>
+                  <input name="Name" type="text" placeholder="Name" required />
+                </div>
+                <div>
+                  <input
+                    name="Email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="rating">
+              <span>Your Rating:</span>
+              <div class="stars">
+                <input type="radio" name="rating" id="star5" />
+                <label for="star5"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star4" />
+                <label for="star4"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star3" />
+                <label for="star3"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star2" />
+                <label for="star2"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star1" />
+                <label for="star1"><i class="ri-star-fill"></i></label>
+              </div>
+            </div>
+
+            <div>
+              <input name="Review" type="text" placeholder="Review title" />
+            </div>
+            <div>
+              <textarea
+                name="Review"
+                placeholder="Your review is..."
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" class="secondary-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!--------- CART Section --------->
     <div id="data-cart" class="cart-menu">
       <div class="wrap">
@@ -559,17 +826,17 @@
                           </div>
                           <div class="variats">
                             <h4 class="dot-title">
-                              <a href="">The Sweater in Tosca</a>
+                              <a href="">Mr Bowerbird</a>
                             </h4>
                             <div class="color grey-color">
                               <span>Color:</span>
-                              <span>Tosca</span>
+                              <span>White</span>
                             </div>
                             <div class="size grey-color">
                               <span>Size:</span>
                               <span>L</span>
                             </div>
-                            <div class="price">$1400</div>
+                            <div class="price">$725</div>
                             <a href="" class="item-remove">
                               <i class="ri-close-line"></i>
                             </a>
@@ -592,11 +859,11 @@
                           </div>
                           <div class="variats">
                             <h4 class="dot-title">
-                              <a href="">Ocean Blue LLS2</a>
+                              <a href="">98 Degree North</a>
                             </h4>
                             <div class="color grey-color">
                               <span>Color:</span>
-                              <span>Tosca</span>
+                              <span>Black</span>
                             </div>
                             <div class="size grey-color">
                               <span>Size:</span>
@@ -619,17 +886,20 @@
                             </div>
                             <div class="thumbnail">
                               <a href="">
-                                <img src="./assets/product_07.jpg" alt="" />
+                                <img
+                                  src="./assets/producthoodie_6.PNG"
+                                  alt=""
+                                />
                               </a>
                             </div>
                           </div>
                           <div class="variats">
                             <h4 class="dot-title">
-                              <a href="">Solid Pink Geo</a>
+                              <a href="">Roadster</a>
                             </h4>
                             <div class="color grey-color">
                               <span>Color:</span>
-                              <span>Tosca</span>
+                              <span>Maroon</span>
                             </div>
                             <div class="size grey-color">
                               <span>Size:</span>
@@ -656,7 +926,7 @@
                     <ul>
                       <li>
                         <span>Subtotel</span>
-                        <span class="value"></span>
+                        <span class="value">$4347.00</span>
                       </li>
                       <ul>
                         <li><span>Shipping</span></li>
@@ -704,6 +974,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Swiper JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom Javascript File -->
     <script src="script.js"></script>
