@@ -11,8 +11,4 @@
 https://adharshnair.github.io/Elegance-eCommerce/
 ```
 
-
-* [![Next][Next.js]][Next-url]
-
-
 The _Elegance_ eCommerce website comprises essential pages, including a home page, product page, cart and checkout pages, login page, and registration page.
