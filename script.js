@@ -185,10 +185,10 @@ const bottomBar = document.getElementById('data-mobile-nav'); // Replace 'yourBo
 function toggleBottomBarVisibility() {
     if (isInViewport(navbar)) {
         // Navbar is in viewport, hide the bottom bar
-        bottomBar.style.display = 'none';
+        bottomBar.style.bottom = '-60px';
     } else {
         // Navbar is not in viewport, show the bottom bar
-        bottomBar.style.display = 'block';
+        bottomBar.style.bottom = '0';
     }
 }
 
