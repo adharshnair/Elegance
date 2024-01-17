@@ -168,32 +168,33 @@ function resetActiveBtn() {
 /* ---------------------- MOBILE NAV (when scrolled) ----------------------*/
 // Function to check if an element is in the viewport
 function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
 // Get references to the navbar and bottom bar elements
-const navbar = document.getElementById('header'); // Replace 'yourNavbarId' with the actual ID of your navbar
-const bottomBar = document.getElementById('data-mobile-nav'); // Replace 'yourBottomBarId' with the actual ID of your bottom bar
+const navbar = document.getElementById("navbar");
+const bottomBar = document.getElementById("data-mobile-nav");
 
 // Function to show or hide the bottom bar based on navbar visibility
 function toggleBottomBarVisibility() {
-    if (isInViewport(navbar)) {
-        // Navbar is in viewport, hide the bottom bar
-        bottomBar.style.bottom = '-60px';
-    } else {
-        // Navbar is not in viewport, show the bottom bar
-        bottomBar.style.bottom = 0;
-    }
+  if (isInViewport(navbar)) {
+    // Navbar is in viewport, hide the bottom bar
+    bottomBar.style.bottom = "-60px";
+  } else {
+    // Navbar is not in viewport, show the bottom bar
+    bottomBar.style.bottom = 0;
+  }
 }
 
 // Attach the function to the window's scroll event
-window.addEventListener('scroll', toggleBottomBarVisibility);
+window.addEventListener("scroll", toggleBottomBarVisibility);
 
 // Initial check on page load
 toggleBottomBarVisibility();
