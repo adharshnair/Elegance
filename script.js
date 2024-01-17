@@ -179,7 +179,7 @@ function isInViewport(element) {
 }
 
 // Get references to the navbar and bottom bar elements
-const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("header");
 const bottomBar = document.getElementById("data-mobile-nav");
 
 // Function to show or hide the bottom bar based on navbar visibility
