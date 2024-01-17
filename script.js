@@ -186,10 +186,10 @@ const bottomBar = document.getElementById("data-mobile-nav");
 function toggleBottomBarVisibility() {
   if (isInViewport(navbar)) {
     // Navbar is in viewport, hide the bottom bar
-    bottomBar.style.display = "block";
+    bottomBar.style.display = "none";
   } else {
     // Navbar is not in viewport, show the bottom bar
-    bottomBar.style.display = "none";
+    bottomBar.style.display = "block";
   }
 }
 
