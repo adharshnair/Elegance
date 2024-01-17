@@ -8,12 +8,13 @@
 ## Table of Content
 
 - [Header](#header)
+- [Mobile Navigation](#mobile-navigation)
 - [Mobile Menu](#mobile-menu)
 - [Sorter](#sorter)
 - [Tabbed](#tabbed)
 - [Slider](#slider)
 - [Carousel](#carousel)
-- [Slider](#slider-1)
+- [Slider](#slider)
 - [Filter](#filter)
 
 ## Header
@@ -42,6 +43,33 @@ for (let i = 0; i < triggerOpen.length; i++) {
   tragetEl.querySelector("[close-button]").addEventListener("click", openData);
   overlay.addEventListener("click", openData);
 }
+```
+
+## Mobile Navigation
+
+- This code snippet adds a scroll event listener to the `window` object. When the scroll event is triggered, it checks the current scroll position (`window.pageYOffset`) and compares it to the previous scroll position.
+
+- If the current scroll position is less than the previous scroll position, it means that the user is scrolling up. In this case, it sets the `bottom` CSS property of the `navbar` element to "-60px", effectively hiding the navbar by moving it off the screen.
+
+- If the current scroll position is greater than the previous scroll position, it means that the user is scrolling down. In this case, it sets the `bottom` CSS property of the `navbar` element to "0", bringing the navbar back into view.
+
+```javascript
+document.addEventListener("DOMContentLoaded", function () {
+  var prevScrollPos = window.pageYOffset;
+  var navbar = document.getElementById("data-mobile-nav");
+
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+      navbar.style.bottom = "-60px";
+    } else {
+      navbar.style.bottom = "0";
+    }
+
+    prevScrollPos = currentScrollPos;
+  };
+});
 ```
 
 ## Mobile Menu

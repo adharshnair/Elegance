@@ -165,6 +165,7 @@ function resetActiveBtn() {
   });
 }
 
+/* ---------------------- MOBILE NAV (when scrolled) ----------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   var prevScrollPos = window.pageYOffset;
   var navbar = document.getElementById("data-mobile-nav");
