@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (prevScrollPos > currentScrollPos) {
       navbar.style.bottom = "-180px";
     } else {
-      navbar.style.bottom = "0";
+      navbar.style.bottom = "60px";
     }
 
     prevScrollPos = currentScrollPos;
