@@ -1974,7 +1974,7 @@ form .button {
   top: auto;
   background-color: var(--white-color);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
-  bottom: 0;
+  bottom: -60px;
   transition: bottom 0.5s; 
   z-index: 888;
 }
