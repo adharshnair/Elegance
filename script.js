@@ -166,19 +166,35 @@ function resetActiveBtn() {
 }
 
 /* ---------------------- MOBILE NAV (when scrolled) ----------------------*/
-document.addEventListener("DOMContentLoaded", function () {
-  var prevScrollPos = window.pageYOffset;
-  var navbar = document.getElementById("data-mobile-nav");
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
+// Get references to the navbar and bottom bar elements
+const navbar = document.getElementById("header");
+const bottomBar = document.getElementById("data-mobile-nav");
 
-    if (prevScrollPos > currentScrollPos) {
-      navbar.style.bottom = "-60px";
-    } else {
-      navbar.style.bottom = "0";
-    }
+// Function to show or hide the bottom bar based on navbar visibility
+function toggleBottomBarVisibility() {
+  if (isInViewport(navbar)) {
+    // Navbar is in viewport, hide the bottom bar
+    bottomBar.style.bottom = "-60px";
+  } else {
+    // Navbar is not in viewport, show the bottom bar
+    bottomBar.style.bottom = 0;
+  }
+}
 
-    prevScrollPos = currentScrollPos;
-  };
-});
+// Attach the function to the window's scroll event
+window.addEventListener("scroll", toggleBottomBarVisibility);
+
+// Initial check on page load
+toggleBottomBarVisibility();
