@@ -189,7 +189,7 @@ function toggleBottomBarVisibility() {
     bottomBar.style.bottom = "-60px";
   } else {
     // Navbar is not in viewport, show the bottom bar
-    bottomBar.style.bottom = "-60px";
+    bottomBar.style.bottom = 0;
   }
 }
 
