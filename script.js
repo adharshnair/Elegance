@@ -198,8 +198,3 @@ window.addEventListener("scroll", toggleBottomBarVisibility);
 
 // Initial check on page load
 toggleBottomBarVisibility();
-
-const width = window.innerWidth;
-const height = window.innerHeight;
-
-document.write(`The viewport's width is ${width} and the height is ${height}.`);
