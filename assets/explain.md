@@ -8,7 +8,6 @@
 ## Table of Content
 
 - [Header](#header)
-  - [Sticky Header](#sticky-header)
 - [Mobile Menu](#mobile-menu)
 - [Sorter](#sorter)
 - [Tabbed](#tabbed)
@@ -42,41 +41,6 @@ for (let i = 0; i < triggerOpen.length; i++) {
   });
   tragetEl.querySelector("[close-button]").addEventListener("click", openData);
   overlay.addEventListener("click", openData);
-}
-```
-
-## Sticky Header
-
-The given code is responsible for creating a sticky header effect on a web page. When the user scrolls the window, the `stickyheader` function is called to add or remove CSS classes from the header element based on the scroll position.
-
-1. The `window.onscroll` event handler is set to call the `stickyheader` function whenever the user scrolls the window.
-
-2. The `header` variable is assigned the DOM element with the id "header" using `document.getElementById("header")`.
-
-3. The `scroll` variable is assigned the `offsetTop` value of the `header` element. This value represents the distance between the top of the `header` element and the top of its offset parent.
-
-4. The `stickyheader` function checks whether the vertical scroll position (`window.pageYOffset`) is greater than the `scroll` value.
-
-   - If the scroll position is greater, it adds the "scroll" and "active" CSS classes to the `header` element using `header.classList.add("scroll")` and `header.classList.add("active")`, respectively.
-
-   - If the scroll position is not greater, it removes the "scroll" and "active" CSS classes from the `header` element using `header.classList.remove("scroll")` and `header.classList.remove("active")`, respectively.
-
-```javascript
-window.onscroll = function () {
-  stickyheader();
-};
-
-var header = document.getElementById("header");
-var scroll = header.offsetTop;
-
-function stickyheader() {
-  if (window.pageYOffset > scroll) {
-    header.classList.add("scroll");
-    header.classList.add("active");
-  } else {
-    header.classList.remove("scroll");
-    header.classList.remove("active");
-  }
 }
 ```
 

@@ -166,19 +166,3 @@ function resetActiveBtn() {
 }
 
 /* ---------------------- FIXED HEADER (while scrolling) ----------------------*/
-window.onscroll = function () {
-  stickyheader();
-};
-
-var header = document.getElementById("header");
-var scroll = header.offsetTop;
-
-function stickyheader() {
-  if (window.pageYOffset > scroll) {
-    header.classList.add("scroll");
-    header.classList.add("active");
-  } else {
-    header.classList.remove("scroll");
-    header.classList.remove("active");
-  }
-}
