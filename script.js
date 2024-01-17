@@ -165,4 +165,19 @@ function resetActiveBtn() {
   });
 }
 
-/* ---------------------- FIXED HEADER (while scrolling) ----------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+  var prevScrollPos = window.pageYOffset;
+  var navbar = document.getElementById("data-mobile-nav");
+
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+      navbar.style.bottom = "-60px";
+    } else {
+      navbar.style.bottom = "0";
+    }
+
+    prevScrollPos = currentScrollPos;
+  };
+});
