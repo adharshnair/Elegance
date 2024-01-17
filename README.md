@@ -11,4 +11,4 @@
 https://adharshnair.github.io/Elegance-eCommerce/
 ```
 
-In _Elegance_ eCommerce website includes a home page, product page, cart & checkout pages, login page, and registration page.
+The _Elegance_ eCommerce website comprises essential pages, including a home page, product page, cart and checkout pages, login page, and registration page.
