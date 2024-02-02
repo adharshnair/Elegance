@@ -1854,7 +1854,7 @@ form .button {
 .cart-total .sub-terms .check,
 .checkout-address .check {
   width: 15px;
-  height: 15px;
+  height: 25px;
 }
 
 /* =================================================  #### CHECKOUT PAGE #### ================================================= */
@@ -1964,9 +1964,6 @@ form .button {
 .checkout-products .discount form .input::placeholder,
 .checkout-products .cart-footer .math-pricing li span:not(.value) {
   color: var(--light-color);
-}
-.checkout-products .total-summary ul li.total {
-  background-color: var(--grey-color);
 }
 
 /* =================================================  #### MOBILE NAV #### ================================================= */
@@ -2176,6 +2173,9 @@ form .button {
 
   .inner-footer .wrap > div {
     flex-flow: nowrap;
+  }
+  .wrappper-2 {
+    height: 1000px;
   }
 }
 
