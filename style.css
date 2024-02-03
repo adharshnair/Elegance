@@ -1021,13 +1021,6 @@ main > div .heading {
   display: flex;
 }
 
-.comp-address .address p,
-.comp-address .contact p,
-.comp-address .mail p,
-.comp-address .calendar p {
-  margin-top: 5px;
-}
-
 .comp-address .address i,
 .comp-address .contact i,
 .comp-address .mail i,
@@ -1966,13 +1959,19 @@ form .button {
   color: var(--light-color);
 }
 
+.contact-footer iframe {
+  height: 30rem;
+  width: 32rem;
+  border-radius: 12px;
+}
+
 /* =================================================  #### MOBILE NAV #### ================================================= */
 .mobile-nav {
   top: auto;
   background-color: var(--white-color);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
   bottom: -60px;
-  transition: bottom 0.5s; 
+  transition: bottom 0.5s;
   z-index: 888;
 }
 .mobile-nav > div {
@@ -2083,6 +2082,10 @@ form .button {
   }
   .inner-footer .bottom {
     padding-bottom: 0;
+  }
+  .contact-footer iframe {
+    height: 25rem;
+    width: 20rem;
   }
 }
 @media (min-width: 992px) {
@@ -2195,12 +2198,21 @@ form .button {
     left: 0;
     right: 0;
   }
+  .contact-footer iframe {
+    height: 25rem;
+    width: 20rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .container .wide {
     --mx-width: 1720px;
     --gutter: 40px;
+  }
+  .contact-footer iframe {
+    height: 30rem;
+    width: 32rem;
+    border-radius: 12px;
   }
 }
 
