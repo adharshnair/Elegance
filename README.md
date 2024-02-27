@@ -5,8 +5,7 @@
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3" />
 
 <img src="https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=for-the-badge&logo" alt="javascript" />
-
-</div>
+   </div>
  <h3 align="center">Elegance eCommerce Website</h3>
  <p>"Revolutionize your online shopping experience with our <b>Elegance</b> e-Commerce platform, delivering seamless transactions and unparalleled customer satisfaction."</p>
 </div>
