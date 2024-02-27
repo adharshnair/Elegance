@@ -14,6 +14,6 @@
 
 ### ➥ Live Demo:
 
-```bash
+```
 https://adharshnair.github.io/Elegance-eCommerce/
 ```
