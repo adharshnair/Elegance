@@ -7,12 +7,10 @@
 <img src="https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=for-the-badge&logo" alt="javascript" />
 
 </div>
-
  <h3 align="center">Elegance eCommerce Website</h3>
  <p>"Revolutionize your online shopping experience with our <b>Elegance</b> e-Commerce platform, delivering seamless transactions and unparalleled customer satisfaction."</p>
  <hr>
 </div>
-
 
 ### ➥ Live Demo:
 
