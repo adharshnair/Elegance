@@ -8,7 +8,7 @@
 
 </div>
 
-  <h3 align="center">Elegance eCommerce Website</h3>
+ <h3 align="center">Elegance eCommerce Website</h3>
  <p>"Revolutionize your online shopping experience with our <b>Elegance</b> e-Commerce platform, delivering seamless transactions and unparalleled customer satisfaction."</p>
  <hr>
 </div>
